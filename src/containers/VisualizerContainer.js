@@ -2,12 +2,9 @@ import React, { Component } from "react";
 import { webSocket } from "rxjs/webSocket";
 import { of } from "rxjs";
 import { map, tap, catchError, switchMap } from "rxjs/operators";
-import styled from "styled-components";
 import GlobeContainer, { Instance as globe } from "../containers/GlobeContainer";
 import Page from "../components/Page";
 import Sidebar from "../components/Sidebar";
-import MemberPhotoWrapper from "../components/MemberPhotoWrapper";
-import RsvpDetailsWrapper from "../components/RsvpDetailsWrapper";
 import Rsvp from "../components/Rsvp";
 
 const URL = "ws://stream.meetup.com/2/rsvps";
