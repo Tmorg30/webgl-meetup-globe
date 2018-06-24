@@ -6,20 +6,11 @@ import styled from "styled-components";
 import GlobeContainer, { Instance as globe } from "../containers/GlobeContainer";
 import Page from "../components/Page";
 import Sidebar from "../components/Sidebar";
-import Card from "../components/Card";
 import MemberPhotoWrapper from "../components/MemberPhotoWrapper";
 import RsvpDetailsWrapper from "../components/RsvpDetailsWrapper";
-import MemberPhoto from "../components/MemberPhoto";
-import RsvpDetails from "../components/RsvpDetails";
+import Rsvp from "../components/Rsvp";
 
 const URL = "ws://stream.meetup.com/2/rsvps";
-
-const Rsvp = ({ member_name, member_photo, group_name, group_city }) => (
-  <Card>
-    <MemberPhoto name={member_name} photo={member_photo} />
-    <RsvpDetails name={member_name} group={group_name} city={group_city} />
-  </Card>
-);
 
 let id = 0;
 
